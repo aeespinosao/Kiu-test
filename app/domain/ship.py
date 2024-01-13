@@ -35,3 +35,14 @@ class Ship:
             id=data.get("id"),
             datetime=datetime.fromisoformat(f"{data.get('date')} {data.get('time')}"),
         )
+
+    def __eq__(self, other):
+        if isinstance(other, Ship):
+            return (
+                self.origin == other.origin
+                and self.destination == other.destination
+                and self.client_id == other.client_id
+                and self.date == other.date
+                and self.time == other.time
+            )
+        return False

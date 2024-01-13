@@ -1,6 +1,7 @@
 from typing import List
 from app.repository.i_repository import IRepository, Singleton
 from app.domain.ship import Ship
+from app.shared.exceptions import KeyNotFoundError
 
 
 class ShipRepository(IRepository, Singleton):
@@ -14,7 +15,7 @@ class ShipRepository(IRepository, Singleton):
         ship = self.db.get(id)
         if ship:
             return Ship.from_dict(ship)
-        raise
+        raise KeyNotFoundError(f"Ship with ID '{id}' not found.")
 
     def get_all(self) -> List[Ship]:
         values = self.db.values()

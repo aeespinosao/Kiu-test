@@ -12,3 +12,8 @@ class Client:
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "Client":
         return cls(id=data.get("id"), name=data.get("name"))
+
+    def __eq__(self, other):
+        if isinstance(other, Client):
+            return self.id == other.id and self.name == other.name
+        return False
