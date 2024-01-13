@@ -1,0 +1,167 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.pyw
+
+# Virtual environments
+venv/
+env/
+*.venv/
+ENV/
+
+# Compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Compiled C extensions
+*.so
+*.pyd
+*.dll
+*.pyc
+
+# Logs
+*.log
+
+# Temporary files
+*.bak
+*.swp
+*~
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# Environments
+.env
+
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+# Flask
+instance/
+.webassets-cache
+
+# Scrapy
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# C extensions
+*.c
+*.m
+
+# SQLAlchemy
+*.sqlite3
+*.sql
+
+# Python bytecode
+__pycache__/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# mypy
+.mypy_cache/
+
+# Pyre type checker
+.pyre/
+
+# Pylons
+.Pylons
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# Poetry
+.poetry/
+__pypackages__/
+
+# Thoth
+.thoth/
+
+# Pynsist
+build/
+installer/
+output/
+
+# wxPython
+wxbuild/
+
+# PyInstaller
+dist/
+build/
+
+# Python Installer
+*.log
+
+# Django dynamic data migrations
+__sentry__/
+*.log
+
+# Sentry test
+sentry-debug.log
+
+# Python SLC
+sentry.lock
+
+# Visual Studio Code
+.vscode/
+
+# Spyder settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
