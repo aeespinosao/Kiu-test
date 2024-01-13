@@ -8,17 +8,17 @@ from app.repository.ship_repository import ShipRepository
 if __name__ == "__main__":
     client_repository = ClientRepository()
     ship_repository = ShipRepository()
-    
+
     create_client_use_case = CreateClientUseCase(client_repository)
-    
-    client = create_client_use_case.execute('1', 'andres')
-    
+
+    client = create_client_use_case.execute("1", "andres")
+
     create_ship_use_case = CreateShipUseCase(ship_repository)
-    
+
     ship = create_ship_use_case.execute(City.MEDELLIN, City.CALI, client.id)
-    
+
     generate_report_use_case = GenerateReportUseCase(ship_repository)
-    
-    report = generate_report_use_case.execute('2024-01-12')
+
+    report = generate_report_use_case.execute("2024-01-12")
 
     print(report)
