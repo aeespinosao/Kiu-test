@@ -55,5 +55,5 @@ pytest --cov=app
 
 For a detailed report in html
 ```bash
-pytest --cov=<your_package_name> --cov-report=html
+pytest --cov=app --cov-report=html
 ```
